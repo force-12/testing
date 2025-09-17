@@ -24,7 +24,7 @@ if st.button("Login"):
             if result:
                 st.session_state['logged_in'] = True
                 st.success("Login berhasil!")
-                st.switch_page("app.py")
+                st.switch_page("app")
             else:
                 st.error("Username / Password salah.")
         except Exception as e:
@@ -34,5 +34,6 @@ if st.button("Login"):
             conn.close()
 
 if st.button("Daftar jika belum ada akun"):
-    st.switch_page("daftar.py")
+    st.switch_page("daftar")
+
 
